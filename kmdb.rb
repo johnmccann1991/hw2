@@ -78,18 +78,13 @@
 # TODO!
 
 # Prints a header for the movies output
-puts "Movies"
-puts "======"
-puts ""
+
 
 # Query the movies data and loop through the results to display the movies output
 # TODO!
 
 # Prints a header for the cast output
-puts ""
-puts "Top Cast"
-puts "========"
-puts ""
+
 
 # Query the cast data and loop through the results to display the cast output for each movie
 # TODO!
@@ -258,6 +253,30 @@ role15.character_name = "Selina Kyle"
 role15.movie_id = movie3.id
 role15.person_id = person12.id
 role15.save
+
+movies=Movie.all
+roles=Role.all
+
+puts "Movies"
+puts "======"
+puts ""
+
+for movie in movies
+    director = Person.where({id: movie.person_id}) [0]
+    puts "#{movie.title} #{movie.year_released} #{movie.rated} #{director.name}"
+end
+
+puts ""
+puts "Top Cast"
+puts "========"
+puts ""
+
+for role in roles
+    movie = Movie.where({id: role.movie_id}) [0]
+    person = Person.where({id: role.person_id}) [0]
+    puts "#{movie.title} #{person.name} #{role.character_name}" 
+end
+
 
 
 
