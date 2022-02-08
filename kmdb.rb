@@ -94,7 +94,9 @@ puts ""
 # Query the cast data and loop through the results to display the cast output for each movie
 # TODO!
 
-Model.destroy_all
+Person.destroy_all
+Movie.destroy_all
+Role.destroy_all
 
 person1 = Person.new
 person1.name = "Christopher Nolan"
@@ -143,6 +145,34 @@ person10.save
 person11 = Person.new
 person11.name = "Anne Hathaway"
 person11.save
+
+#movies table data insert
+movie1 = Movie.new
+movie1.title = "Batman Begins"
+movie1.year_released = 2005
+movie1.rated = "PG-13"
+movie1.person_id = person1.id
+movie1.save
+
+movie2 = Movie.new
+movie2.title = "The Dark Knight"
+movie2.year_released = 2008
+movie2.rated = "PG-13"
+movie2.person_id = person1.id
+movie2.save
+
+movie3 = Movie.new
+movie3.title = "The Dark Knight Rises"
+movie3.year_released = 2012
+movie3.rated = "PG-13"
+movie3.person_id = person1.id
+movie3.save
+
+#roles table data insert
+
+
+
+
 
 
 
