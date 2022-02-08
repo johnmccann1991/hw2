@@ -212,10 +212,65 @@ role7.person_id = person7.id
 role7.save
 
 role8 = Role.new
-role8.character_name = "Joker"
+role8.character_name = "Harvey Dent"
 role8.movie_id = movie2.id
-role8.person_id = person7.id
+role8.person_id = person8.id
 role8.save
+
+role9 = Role.new
+role9.character_name = "Alfred"
+role9.movie_id = movie2.id
+role9.person_id = person3.id
+role9.save
+
+role10 = Role.new
+role10.character_name = "Rachel Dawes"
+role10.movie_id = movie2.id
+role10.person_id = person9.id
+role10.save
+
+role11 = Role.new
+role11.character_name = "Bruce Wayne"
+role11.movie_id = movie3.id
+role11.person_id = person2.id
+role11.save
+
+role12 = Role.new
+role12.character_name = "Commissioner Gordon"
+role12.movie_id = movie3.id
+role12.person_id = person6.id
+role12.save
+
+role13 = Role.new
+role13.character_name = "Bane"
+role13.movie_id = movie3.id
+role13.person_id = person10.id
+role13.save
+
+role14 = Role.new
+role14.character_name = "John Blake"
+role14.movie_id = movie3.id
+role14.person_id = person11.id
+role14.save
+
+role15 = Role.new
+role15.character_name = "Selina Kyle"
+role15.movie_id = movie3.id
+role15.person_id = person12.id
+role15.save
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
