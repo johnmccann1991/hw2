@@ -118,33 +118,33 @@ person5 = Person.new
 person5.name = "Katie Holmes"
 person5.save
 
-person5 = Person.new
-person5.name = "Gary Oldman"
-person5.save
-
 person6 = Person.new
-person6.name = "Heath Ledger"
+person6.name = "Gary Oldman"
 person6.save
 
 person7 = Person.new
-person7.name = "Aaron Eckhart"
+person7.name = "Heath Ledger"
 person7.save
 
 person8 = Person.new
-person8.name = "Maggie Gyllenhaal"
+person8.name = "Aaron Eckhart"
 person8.save
 
 person9 = Person.new
-person9.name = "Tom Hardy"
+person9.name = "Maggie Gyllenhaal"
 person9.save
 
 person10 = Person.new
-person10.name = "Joseph Gordon-Levitt"
+person10.name = "Tom Hardy"
 person10.save
 
 person11 = Person.new
-person11.name = "Anne Hathaway"
+person11.name = "Joseph Gordon-Levitt"
 person11.save
+
+person12 = Person.new
+person12.name = "Anne Hathaway"
+person12.save
 
 #movies table data insert
 movie1 = Movie.new
@@ -169,6 +169,55 @@ movie3.person_id = person1.id
 movie3.save
 
 #roles table data insert
+role1 = Role.new
+role1.character_name = "Bruce Wayne"
+role1.movie_id = movie1.id
+role1.person_id = person2.id
+role1.save
+
+role2 = Role.new
+role2.character_name = "Alfred"
+role2.movie_id = movie1.id
+role2.person_id = person3.id
+role2.save
+
+role3 = Role.new
+role3.character_name = "Ra's Al Ghul"
+role3.movie_id = movie1.id
+role3.person_id = person4.id
+role3.save
+
+role4 = Role.new
+role4.character_name = "Rachel Dawes"
+role4.movie_id = movie1.id
+role4.person_id = person5.id
+role4.save
+
+role5 = Role.new
+role5.character_name = "Commissioner Gordon"
+role5.movie_id = movie1.id
+role5.person_id = person6.id
+role5.save
+
+role6 = Role.new
+role6.character_name = "Bruce Wayne"
+role6.movie_id = movie2.id
+role6.person_id = person2.id
+role6.save
+
+role7 = Role.new
+role7.character_name = "Joker"
+role7.movie_id = movie2.id
+role7.person_id = person7.id
+role7.save
+
+role8 = Role.new
+role8.character_name = "Joker"
+role8.movie_id = movie2.id
+role8.person_id = person7.id
+role8.save
+
+
 
 
 
